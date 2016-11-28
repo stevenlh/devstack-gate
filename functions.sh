@@ -519,7 +519,12 @@ function setup_project {
         if git_has_branch $project $branch; then
             git_checkout $project $branch
         else
-            git_checkout $project master
+            if [ "$project" = "openstack/tempest" ] || [ "$project" = "openstack/tempest-lib" ] || \
+                 [ "$project" = "openstack/keystoneauth" ] || [ "$project" = "openstack-infra/devstack-gate" ]; then
+                 git_checkout $project master
+            else
+            git_checkout $project kilo-eol
+            fi
         fi
     fi
 }
