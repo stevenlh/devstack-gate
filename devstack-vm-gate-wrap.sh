@@ -44,8 +44,8 @@ start_timer
 # below.
 # See: https://bugs.launchpad.net/openstack-gate/+bug/1544827
 JOB_PROJECTS="$PROJECTS"
-PROJECTS="openstack-infra/devstack-gate $PROJECTS"
-PROJECTS="openstack-dev/devstack $PROJECTS"
+PROJECTS="stevenlh/devstack-gate $PROJECTS"
+PROJECTS="stevenlh/devstack $PROJECTS"
 #PROJECTS="openstack-dev/pbr $PROJECTS"
 #PROJECTS="openstack/ceilometer $PROJECTS"
 #PROJECTS="openstack/ceilometermiddleware $PROJECTS"
