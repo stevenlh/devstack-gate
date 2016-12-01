@@ -334,7 +334,7 @@ ROOTSLEEP=0
 # because it needs specific git references directly from gerrit
 # to correctly do testing. Otherwise you are not testing
 # the code you have posted for review.
-ERROR_ON_CLONE=True
+ERROR_ON_CLONE=FALSE
 ENABLED_SERVICES=$MY_ENABLED_SERVICES
 SKIP_EXERCISES=$SKIP_EXERCISES
 SERVICE_HOST=127.0.0.1
