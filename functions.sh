@@ -471,7 +471,7 @@ function setup_project {
     local project=$1
     local branch=$2
     local short_project=`basename $project`
-    local git_base=${GIT_BASE:-https://git.openstack.org}
+    local git_base=${GIT_BASE:-https://github.com}
     # allow for possible project branch override
     local uc_project=`echo $short_project | tr [:lower:] [:upper:] | tr '-' '_' | sed 's/[^A-Z_]//'`
     local project_branch_var="\$OVERRIDE_${uc_project}_PROJECT_BRANCH"
