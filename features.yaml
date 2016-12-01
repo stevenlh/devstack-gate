@@ -95,7 +95,7 @@ features:
 
   neutron:
     base:
-      services: [quantum, q-svc, q-agt, q-dhcp, q-l3, q-meta, q-metering]
+      services: [quantum, q-svc, q-agt, q-dhcp, q-l3, q-meta]
       rm-services: [n-net]
 
   neutron-adv:
