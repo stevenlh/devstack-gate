@@ -1,18 +1,18 @@
 config:
   default:
-    master: [default, ceilometer, glance, horizon, nova, swift, cinder, keystone]
-    ocata: [default, ceilometer, glance, horizon, nova, swift, cinder, keystone]
-    newton: [default, ceilometer, glance, horizon, nova, swift, cinder, keystone]
-    mitaka: [default, ceilometer, glance, horizon, nova, swift, cinder, keystone]
-    liberty: [default, ceilometer, glance, horizon, nova, swift, cinder, keystone]
-    kilo: [default, ceilometer, glance, horizon, nova, swift, cinder, keystone]
-    juno: [default, ceilometer, glance, horizon, nova, swift, cinder, keystone]
-    icehouse: [default, ceilometer, glance, horizon, nova, swift, cinder, keystone]
+    master: [default, heat, glance, horizon, nova, swift, cinder, keystone]
+    ocata: [default, heat, glance, horizon, nova, swift, cinder, keystone]
+    newton: [default, heat, glance, horizon, nova, swift, cinder, keystone]
+    mitaka: [default, heat, glance, horizon, nova, swift, cinder, keystone]
+    liberty: [default, heat, glance, horizon, nova, swift, cinder, keystone]
+    kilo: [default, heat, glance, horizon, nova, swift, cinder, keystone]
+    juno: [default, heat, glance, horizon, nova, swift, cinder, keystone]
+    icehouse: [default, heat, glance, horizon, nova, swift, cinder, keystone]
     # This can be used by functional jobs that only want their dependencies installed
     # and don't need to incur the overhead of installing all services in the process.
     no_services: [default]
   neutron:
-    features: [neutron, neutron-adv]
+    features: [neutron]
   # different backends
   postgres:
     features: [postgresql]
@@ -124,7 +124,7 @@ features:
 
   heat:
     base:
-      services: [heat, h-api, h-api-cfn, h-api-cw, h-eng]
+      services: [heat, h-api, h-eng]
 
   trove:
     base:
